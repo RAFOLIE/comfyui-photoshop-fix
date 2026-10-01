@@ -1,0 +1,292 @@
+{
+  "last_node_id": 8,
+  "last_link_id": 2,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "🔹Photoshop Images",
+      "pos": [
+        0,
+        0
+      ],
+      "size": [
+        270,
+        330
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "title": "V3 TEST",
+      "properties": {
+        "Node name for S&R": "🔹Photoshop Images"
+      },
+      "widgets_values": [
+        "V3 TEST"
+      ],
+      "outputs": [
+        {
+          "name": "RGB",
+          "type": "IMAGE",
+          "links": [
+            1
+          ]
+        },
+        {
+          "name": "ALPHA",
+          "type": "MASK",
+          "links": [
+            2
+          ]
+        },
+        {
+          "name": "SELECTION",
+          "type": "MASK",
+          "links": []
+        },
+        {
+          "name": "W",
+          "type": "INT",
+          "links": []
+        },
+        {
+          "name": "H",
+          "type": "INT",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "🔹SendTo Photoshop Plugin",
+      "pos": [
+        340,
+        0
+      ],
+      "size": [
+        270,
+        240
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "title": "Send to PS",
+      "properties": {
+        "Node name for S&R": "🔹SendTo Photoshop Plugin"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "outputs": [],
+      "inputs": [
+        {
+          "name": "RGB",
+          "type": "IMAGE",
+          "link": 1
+        },
+        {
+          "name": "ALPHA",
+          "type": "MASK",
+          "link": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "🔹Floats",
+      "pos": [
+        0,
+        390
+      ],
+      "size": [
+        270,
+        220
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "title": "MAIN",
+      "properties": {
+        "Node name for S&R": "🔹Floats"
+      },
+      "widgets_values": [
+        0.42
+      ],
+      "outputs": [
+        {
+          "name": "value",
+          "type": "FLOAT",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "🔹Floats",
+      "pos": [
+        340,
+        390
+      ],
+      "size": [
+        270,
+        220
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "title": "MAIN",
+      "properties": {
+        "Node name for S&R": "🔹Floats"
+      },
+      "widgets_values": [
+        0.42
+      ],
+      "outputs": [
+        {
+          "name": "value",
+          "type": "FLOAT",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "🔹Photoshop Strings",
+      "pos": [
+        680,
+        0
+      ],
+      "size": [
+        300,
+        260
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "title": "+ PROMPT",
+      "properties": {
+        "Node name for S&R": "🔹Photoshop Strings"
+      },
+      "widgets_values": [
+        "V3 中文测试"
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "🔹Photoshop Strings",
+      "pos": [
+        680,
+        330
+      ],
+      "size": [
+        300,
+        260
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "title": "+ PROMPT",
+      "properties": {
+        "Node name for S&R": "🔹Photoshop Strings"
+      },
+      "widgets_values": [
+        "V3 中文测试"
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "type": "🔹SeedManager",
+      "pos": [
+        0,
+        690
+      ],
+      "size": [
+        270,
+        200
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "title": "SEED",
+      "properties": {
+        "Node name for S&R": "🔹SeedManager"
+      },
+      "widgets_values": [
+        12345,
+        "disable"
+      ],
+      "outputs": [
+        {
+          "name": "seed",
+          "type": "INT",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "type": "🔹SeedManager",
+      "pos": [
+        340,
+        690
+      ],
+      "size": [
+        270,
+        200
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "title": "SEED",
+      "properties": {
+        "Node name for S&R": "🔹SeedManager"
+      },
+      "widgets_values": [
+        12345,
+        "disable"
+      ],
+      "outputs": [
+        {
+          "name": "seed",
+          "type": "INT",
+          "links": []
+        }
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      2,
+      1,
+      1,
+      2,
+      1,
+      "MASK"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}

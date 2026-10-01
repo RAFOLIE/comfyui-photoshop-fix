@@ -1,12 +1,12 @@
 [project]
 name = "comfyui-photoshop"
 description = "🔹 Powerfull bridge to Photoshop by NimaNzrii"
-version = "1.9.3"
+version = "2.0.49rc2"
 license = {file = "LICENSE"}
-dependencies = ["msgpack", "aiofiles", "GitPython", "PyGithub", "asyncio", "numpy"]
+dependencies = ["msgpack", "aiofiles", "numpy"]
 
 [project.urls]
-Repository = "https://github.com/NimaNzrii/comfyui-photoshop"
+Repository = "https://github.com/RAFOLIE/comfyui-photoshop-fix"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]

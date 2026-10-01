@@ -1,7 +1,7 @@
 {
 	"id": "3e6d64e0",
 	"name": "Comfyui Photoshop",
-	"version": "1.9.3",
+	"version": "2.0.49",
 	"main": "index.html",
 	"manifestVersion": 6,
 	"host": {
@@ -16,7 +16,7 @@
 				"default": "Ai Panel"
 			},
 			"minimumSize": {
-				"width": 250,
+				"width": 350,
 				"height": 250
 			},
 			"maximumSize": {
@@ -66,11 +66,11 @@
 				"height": 2000
 			},
 			"preferredDockedSize": {
-				"width": 595,
+				"width": 550,
 				"height": 400
 			},
 			"preferredFloatingSize": {
-				"width": 595,
+				"width": 550,
 				"height": 400
 			},
 			"icons": [
@@ -111,12 +111,16 @@
 				"height": 2000
 			},
 			"preferredDockedSize": {
-				"width": 595,
+				"width": 620,
 				"height": 400
 			},
 			"preferredFloatingSize": {
-				"width": 595,
+				"width": 620,
 				"height": 400
+			},
+			"webview": {
+				"allow": "yes",
+				"domains": "all"
 			},
 			"icons": [
 				{
@@ -147,6 +151,7 @@
 		"launchProcess": {
 			"schemes": [
 				"https",
+				"http",
 				"slack",
 				"file",
 				"ws",
@@ -195,5 +200,10 @@
 				"pluginList"
 			]
 		}
-	]
+	],
+	"FeatureFlags": {
+		"enableFillAsCustomAttribute": true,
+		"enableSWCSupport": true,
+		"enableAlerts": true
+	}
 }

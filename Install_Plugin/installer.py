@@ -6,7 +6,6 @@ import platform
 import json
 
 print("")
-print("Photoshop Plugin V1.9.3 Installing. . .")
 print("")
 
 
@@ -25,6 +24,7 @@ def get_plugin_version():
 
 
 plugin_version = get_plugin_version()
+print(f"Photoshop Plugin V{plugin_version} Installing. . .")
 plugin_folder_withVersion = "3e6d64e0" + "_" + plugin_version
 plugin_folder = os.path.join(plugin_path, "3e6d64e0")
 

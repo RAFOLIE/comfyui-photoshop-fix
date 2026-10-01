@@ -1,5 +1,8 @@
+# V3 / Nodes 2.0 本地预览版 2.0.49-v3-preview.2
+
+本分支以本机运行的 2.0.49 为基线，已迁移到 V3 节点 API 并移除 V1 整合节点。使用说明、验证方法和限制见 [MIGRATION_V3.md](MIGRATION_V3.md)。以下保留上游项目介绍与署名。
+
 <div align="center">
-V2.0.0 BETA IS COMING SOON...
 
 # ✨ ComfyUI Photoshop Plugin    [![GitHub Stars](https://img.shields.io/github/stars/NimaNzrii/comfyui-photoshop?style=social)](https://github.com/NimaNzrii/comfyui-photoshop)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://studio.buymeacoffee.com/dashboard)
