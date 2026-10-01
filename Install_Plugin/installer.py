@@ -15,7 +15,7 @@ plugin_path = os.path.dirname(os.path.abspath(__file__))
 def get_plugin_version():
     try:
         manifest_path = os.path.join(plugin_path, "3e6d64e0", "manifest.json")
-        with open(manifest_path, "r") as f:
+        with open(manifest_path, "r", encoding="utf-8") as f:
             manifest = json.load(f)
         return manifest.get("version", "unknown")
     except Exception as e:
